@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import {Emphasis, Text} from './components/Text';
+import { Text } from './components/Text';
+import { Emphasis } from './components/Emphasis';
+import { Box } from './components/Box';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Text as={Emphasis}>Hello!</Text>
       <br/><br/>
       <Text color='red' style={{backgroundColor: 'greenyellow'}}>Component with custom color prop</Text>
+      <br/><br/>
+      <Box borderStyle='dotted'>This is a box</Box>
     </div>
   );
 }
